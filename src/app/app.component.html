@@ -1,0 +1,40 @@
+<button class="btn btn-success" (click)="fetchDetails()">userDetails</button>
+<button class="btn btn-success" (click)="postProfile()">userDetailsdqwdq</button>
+<button class="btn btn-success" (click)="deletedata()">deletedata</button>
+
+  <div class="col-4">
+    <select class="formselect">
+          @for (item of userlist; track $index)  
+        
+         {
+            <option>
+                {{item.title}}
+                {{item.id}}
+                
+                <!-- {{item.userId}} -->
+             </option>
+        }  
+    </select>  
+ </div> 
+ <div class="col-4">
+    <select class="formselect">
+        @for (items of data; track items) 
+        {
+            <option>
+                {{items.title}}
+                {{items.id}} 
+             </option>
+        } 
+    </select>  
+ </div> 
+   <!-- <p>
+    <select name="" id="">
+        <option value="">
+            {{userlist[10].title}}
+        </option>
+    </select>
+</p>   -->
+<!-- <div *ngfor="let userlist of myCurrentData">
+    <p>{{myCurrentData}}</p>
+   
+</div> -->
